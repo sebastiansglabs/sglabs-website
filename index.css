@@ -557,6 +557,13 @@ section { padding: 6rem 4rem; }
   width: 52px; height: 52px;
 }
 
+.founder-email{ 
+  font-size: 0.95rem; font-weight: 400; color: var(--offwhite); 
+}
+.founder-email a { color: var(--offwhite); text-decoration: none; transition: color 0.2s; }
+.founder-email a:hover { color: var(--blue-light); }
+
+
 .founder-card-name {
   font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
   font-size: 1.15rem; letter-spacing: 0.05em; color: white;

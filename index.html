@@ -38,7 +38,7 @@
           From Concept<br>
           <span>To Creation.</span>
         </h1>
-        <div class="hero-slogan">SG Labs — Ideas, Eng xineered.</div>
+        <div class="hero-slogan">SG Labs — Ideas, Engineered.</div>
         <p class="hero-sub">An engineering and innovation company operating across the United States and Belize — designing, fabricating, and manufacturing with precision and purpose.</p>
         <div class="hero-actions">
           <a href="#sglabs" class="btn-primary">Who We Are</a>
@@ -327,8 +327,8 @@
               <div class="info-row">
                 <span class="info-label">Contact</span>
                 <span class="info-value">
-                  <span id="founder-email">
-                    
+                  <span class="founder-email">
+                    <a id="founder-email-link" href="#">Loading...</a>
                   </span>
                 </span>
               </div>
@@ -374,12 +374,16 @@
       <div class="contact-layout">
         <div class="contact-info reveal">
           <div class="contact-detail">
-            <div class="contact-detail-label">Email</div>
-            <div class="contact-detail-value"><a href="/cdn-cgi/l/email-protection#026a676e6e6d4271656e636071616d2c616d6f"><span class="__cf_email__" data-cfemail="224a474e4e4d6251454e434051414d0c414d4f">[email&#160;protected]</span></a></div>
+            <div class="contact-detail-label">Primary Contact</div>
+            <div class="contact-detail-value">
+              <a id="hello-email-link" href="#">Loading...</a>
+            </div>
           </div>
           <div class="contact-detail">
-            <div class="contact-detail-label">General Inquiries</div>
-            <div class="contact-detail-value"><a href="/cdn-cgi/l/email-protection#bdded2d3c9dcdec9fdcedad1dcdfceded293ded2d0"><span class="__cf_email__" data-cfemail="2b4844455f4a485f6b584c474a4958484405484446">[email&#160;protected]</span></a></div>
+            <div class="contact-detail-label">Business Inquiries</div>
+            <div class="contact-detail-value">
+              <a id="contact-email-link" href="#">Loading...</a>
+            </div>
           </div>
           <div class="contact-detail">
             <div class="contact-detail-label">Website</div>
@@ -457,6 +461,28 @@
     </footer>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        const helloEmail = "hello" + "@" + "sglabsco.com";
+        const contactEmail = "contact" + "@" + "sglabsco.com";
+        const founderEmail = "sebastian" + "@" + "sglabsco.com";
+
+        const helloLink = document.getElementById("hello-email-link");
+        if (helloLink) {
+          helloLink.href = "mailto:" + helloEmail;
+          helloLink.textContent = helloEmail;
+        }
+
+        const contactLink = document.getElementById("contact-email-link");
+        if (contactLink) {
+          contactLink.href = "mailto:" + contactEmail;
+          contactLink.textContent = contactEmail;
+        }
+
+        const founderLink = document.getElementById("founder-email-link");
+        if (founderLink) {
+          founderLink.href = "mailto:" + founderEmail;
+          founderLink.textContent = founderEmail;
+        }
+
       function handleServiceChange(sel) {
         const wrap = document.getElementById('otherServiceWrap');
         if (sel.value === 'other') {
