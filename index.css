@@ -585,7 +585,7 @@ section { padding: 6rem 4rem; }
 #social { padding: 6rem 4rem; border-top: 1px solid var(--rule); background: var(--navy); }
 
 .social-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 1rem; margin-top: 3.5rem;
 }
 
