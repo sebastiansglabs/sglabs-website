@@ -404,13 +404,13 @@
           <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" onsubmit="return false;">
             <input type="hidden" name="form-name" value="contact" />
             <div class="form-row">
-              <div class="form-group"><label for="fname">First Name</label><input type="text" id="fname" placeholder="Sebastian" /><span class="field-error" id="err-fname"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>First name is required</span></div>
-              <div class="form-group"><label for="lname">Last Name</label><input type="text" id="lname" placeholder="Garcia" /><span class="field-error" id="err-lname"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>Last name is required</span></div>
+              <div class="form-group"><label for="fname">First Name</label><input type="text" id="fname" name="fname" placeholder="Sebastian" /><span class="field-error" id="err-fname"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>First name is required</span></div>
+              <div class="form-group"><label for="lname">Last Name</label><input type="text" id="lname" name="lname" placeholder="Garcia" /><span class="field-error" id="err-lname"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>Last name is required</span></div>
             </div>
-            <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="you@example.com" /><span class="field-error" id="err-email"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>A valid email is required</span></div>
+            <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="you@example.com" /><span class="field-error" id="err-email"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>A valid email is required</span></div>
             <div class="form-group">
               <label for="service">Service of Interest</label>
-              <select id="service" onchange="handleServiceChange(this)">
+              <select id="service" name="service" onchange="handleServiceChange(this)"> 
                 <option value="" disabled selected>Select a service...</option>
                 <option value="3d-printing">3D Printing — SG Engineering (US)</option>
                 <option value="metal-fab">Metal Fabrication — SG Engineering (Belize)</option>
@@ -424,10 +424,10 @@
             <div id="otherServiceWrap" style="overflow:hidden; max-height:0; opacity:0; transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease; margin-top:0;">
               <div class="form-group">
                 <label for="otherService">Tell us what you need</label>
-                <input type="text" id="otherService" placeholder="Describe your interest or project type..." />
+                <input type="text" id="otherService" name="otherService" placeholder="Describe your interest or project type..." />
               </div>
             </div>
-            <div class="form-group"><label for="message">Project Details</label><textarea id="message" placeholder="Describe your project — materials, dimensions, quantities, timeline, or anything else that helps us understand what you need..."></textarea><span class="field-error" id="err-message"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>Project details are required</span></div>
+            <div class="form-group"><label for="message">Project Details</label><textarea id="message" name="message" placeholder="Describe your project..."></textarea><span class="field-error" id="err-message"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>Project details are required</span></div>
             <button class="form-submit" onclick="handleSubmit()">
               Send Message
               <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
