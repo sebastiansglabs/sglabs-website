@@ -147,7 +147,7 @@ body {
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 8px;
   padding: 2rem;
-  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
+  transition: border-color 0.5s, box-shadow 0.5s, background 0.5s;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -157,6 +157,11 @@ body {
   background: rgba(44,93,170,0.08);
 }
 
+.value-card:hover .value-number {
+  color: var(--blue);
+  transition: all 0.5s;
+}
+
 .value-number {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 900;
@@ -164,6 +169,7 @@ body {
   color: rgba(44,93,170,0.3);
   line-height: 1;
   margin-bottom: 0.75rem;
+  transition: all 0.5s;
 }
 
 .value-title {
@@ -227,7 +233,7 @@ body {
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 8px;
   padding: 2rem;
-  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
+  transition: border-color 0.5s, box-shadow 0.5s, background 0.5s;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -237,6 +243,11 @@ body {
   background: rgba(44,93,170,0.08);
 }
 
+.about-diff-card:hover .diff-number {
+  color: var(--blue-light);
+  transition: all 0.5s;
+}
+
 .about-diff-card .diff-number {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 900;
@@ -244,6 +255,7 @@ body {
   color: rgba(44,93,170,0.3);
   line-height: 1;
   margin-bottom: 0.75rem;
+  transition: all 0.5s;
 }
 
 .about-diff-card .diff-title {

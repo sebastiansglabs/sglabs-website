@@ -324,6 +324,12 @@ body{
     color: rgba(44,93,170,0.2);
     line-height: 1;
     margin-bottom: 0.75rem;
+    transition: all 0.5s; 
+}
+
+.diff-card:hover .diff-number{
+    color: var(--blue);
+    transition: all 0.5s;
 }
 
 .diff-title {
