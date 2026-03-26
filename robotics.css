@@ -1,0 +1,210 @@
+body {
+  padding-top: 108px;
+}
+
+/* ── BREADCRUMB ── */
+.breadcrumb {
+  position: fixed;
+  top: 72px; left: 0; right: 0;
+  z-index: 800;
+  background: rgba(44,93,170,0.97);
+  backdrop-filter: blur(8px);
+  padding: 0.6rem 4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.8);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.breadcrumb a { color: white; text-decoration: none; transition: color 0.2s; font-weight: 500; }
+.breadcrumb a:hover { color: rgba(255,255,255,0.7); }
+.breadcrumb-sep { opacity: 0.4; }
+.breadcrumb-current { color: white; font-weight: 500; }
+
+/* ── HERO ── */
+#robotics-hero {
+  min-height: calc(100vh - 108px);
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+  background: var(--navy) !important;
+}
+
+#robotics-hero .hero-bg::before {
+  background-image:
+    linear-gradient(rgba(44,93,170,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(44,93,170,0.06) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+#robotics-hero .hero-bg::after {
+  background: radial-gradient(circle, rgba(44,93,170,0.15) 0%, transparent 65%);
+}
+
+/* ── CONTENT ── */
+.robotics-content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Status */
+.robotics-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--blue-light);
+  font-weight: 600;
+}
+
+/* Gear */
+.robotics-icon {
+  font-size: 4rem;
+  color: rgba(44,93,170,0.25);
+  line-height: 1;
+  animation: spin-slow 12s linear infinite;
+  display: inline-block;
+  width: fit-content;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Headline */
+.robotics-headline {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  color: var(--offwhite);
+  margin: 0;
+}
+
+.robotics-headline span {
+  color: var(--blue);
+  display: block;
+}
+
+/* Subline */
+.robotics-subline {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--blue-light);
+}
+
+/* Description */
+.robotics-desc {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 560px;
+}
+
+/* Tags */
+.robotics-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.rtag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue-light);
+  border: 1px solid rgba(44,93,170,0.3);
+  padding: 0.3rem 0.75rem;
+  border-radius: 2px;
+}
+
+/* Divider */
+.robotics-divider {
+  height: 1px;
+  background: var(--rule);
+  width: 100%;
+}
+
+/* Credibility */
+.robotics-credibility {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.robotics-cred-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.robotics-cred-awards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.robotics-award {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(244,245,247,0.7);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.award-arrow {
+  color: var(--blue);
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+/* Actions */
+.robotics-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 767px) {
+  #robotics-hero { padding: 3rem 1.5rem; }
+  .breadcrumb { padding: 0.6rem 1.5rem; top: 60px; font-size: 0.6rem; }
+  .robotics-icon { font-size: 3rem; }
+}
+
+@media (max-width: 599px) {
+  nav { height: 60px; }
+  body { padding-top: 96px; }
+  .breadcrumb { top: 60px; }
+  #robotics-hero { padding: 2.5rem 1.25rem; }
+  .robotics-actions { flex-direction: column; }
+  .robotics-actions .btn-primary,
+  .robotics-actions .btn-ghost { width: 100%; text-align: center; }
+}

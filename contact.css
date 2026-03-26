@@ -1,0 +1,74 @@
+body {
+  padding-top: 108px;
+}
+
+/* ── BREADCRUMB ── */
+.breadcrumb {
+  position: fixed;
+  top: 72px; left: 0; right: 0;
+  z-index: 800;
+  background: rgba(44,93,170,0.97);
+  backdrop-filter: blur(8px);
+  padding: 0.6rem 4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.8);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.breadcrumb a { color: white; text-decoration: none; transition: color 0.2s; font-weight: 500; }
+.breadcrumb a:hover { color: rgba(255,255,255,0.7); }
+.breadcrumb-sep { opacity: 0.4; }
+.breadcrumb-current { color: white; font-weight: 500; }
+
+/* ── SOCIAL SECTION ── */
+#contact-social {
+  background: var(--navy);
+  padding: 6rem 4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+#contact-social .section-eyebrow { color: var(--blue-light); }
+#contact-social .section-eyebrow::before { background: var(--blue-light); }
+
+/* ── CONTACT FORM SECTION ── */
+#contact-form-section {
+  background: var(--navy);
+  padding: 6rem 4rem;
+  border-top: 1px solid var(--rule);
+}
+
+#contact-form-section .section-eyebrow { color: var(--blue-light); }
+#contact-form-section .section-eyebrow::before { background: var(--blue-light); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1023px) and (min-width: 768px) {
+  #contact-social, #contact-form-section { padding: 5rem 2rem; }
+  .breadcrumb { padding: 0.6rem 2rem; }
+  .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .form-row { grid-template-columns: 1fr 1fr; }
+  .social-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 767px) {
+  body { padding-top: 96px; }
+  .breadcrumb { padding: 0.6rem 1.5rem; top: 60px; font-size: 0.6rem; }
+  #contact-social, #contact-form-section { padding: 4rem 1.5rem; }
+  .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .social-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 599px) {
+  nav { height: 60px; }
+  .breadcrumb { top: 60px; }
+  .form-submit { width: 100%; justify-content: center; }
+  .social-card { flex-direction: row; align-items: center; gap: 1rem; padding: 1rem 1.25rem; }
+  .social-card .social-desc { display: none; }
+  .social-card::after { display: none; }
+}

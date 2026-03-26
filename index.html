@@ -6,26 +6,26 @@
     <title>
       SG Labs
     </title>
+    <link rel="icon" type="image/x-icon" href="SG_Labs.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel=" stylesheet" href="index.css">
   </head>
-  <body>
+  <body>  
     <!-- NAV -->
     <nav>
       <a href="#home" class="nav-logo">
         <span class="nav-logo-text">SG Labs</span>
       </a>
+      
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sglabs">SG Labs</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#sg-engineering">Engineering</a></li>
-        <li><a href="#sg-signs">Signs</a></li>
-        <li><a href="#sg-robotics">Robotics</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+        <li><a href="index.html" style="color:var(--offwhite);">Home</a></li>
+        <li><a href="engineering.html">Engineering</a></li>
+        <li><a href="signs.html">Signs</a></li>
+        <li><a href="robotics.html">Robotics</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
       </ul>
     </nav>
 
@@ -46,7 +46,7 @@
         </div>
       </div>
       <div class="hero-stats">
-        <div class="stat"><span class="stat-num">2</span><span class="stat-label">Countries</span></div>
+        <div class="stat"><span class="stat-num">2</span><span class="stat-label">Operating Countries</span></div>
         <div class="stat"><span class="stat-num">2</span><span class="stat-label">Active Divisions</span></div>
         <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Intl. Awards</span></div>
       </div>
@@ -143,14 +143,29 @@
             </ul>
           </div>
         </div>
-        <div class="service-division" style="grid-column:1/-1; border-top:1px solid var(--rule);">
+        <div class="service-division">
           <div class="division-flag"><span class="flag-dot"></span>Belize</div>
           <div class="division-title">Print &amp; Signage</div>
-          <div class="division-region">Belize, Central America — Large Format, Commercial &amp; Retail</div>
-          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:0.5rem 2rem;">
-            <ul class="capability-list"><li>Billboards</li><li>Banners</li></ul>
-            <ul class="capability-list"><li>Posters</li><li>Flyers</li></ul>
-            <ul class="capability-list"><li>Awnings</li><li>Custom Signage</li></ul>
+          <div class="division-region">Belize, Central America</div>
+          <div class="capability-group">
+            <div class="capability-group-label">Metal &amp; Structural</div>
+            <ul class="capability-list">
+              <li>Plasma Cutting</li>
+              <li>Hydraulic Press Brake / Metal Bending</li>
+              <li>Welding (STICK / MIG / TIG)</li>
+              <li>Milling &amp; Lathe Work</li>
+              <li>Custom Metal Fabrication</li>
+            </ul>
+          </div>
+          <div class="capability-group" style="margin-top:1.25rem;">
+            <div class="capability-group-label">Digital &amp; CNC</div>
+            <ul class="capability-list">
+              <li>CNC Router</li>
+              <li>Laser Engraving</li>
+              <li>Vinyl Cutting (Graphtec)</li>
+              <li>Custom Wood Fabrication</li>
+              <li>Engravings of Any Kind</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -159,11 +174,11 @@
     <!-- SG ENGINEERING -->
     <div class="division-brand-section" id="sg-engineering">
       <div>
-        <div class="section-eyebrow">Division 01 — Active</div>
+        <div class="section-eyebrow">Division 01</div>
       </div>
       <div class="division-layout">
         <div class="division-info reveal">
-          <div class="division-status"><span class="status-dot active"></span>Active Division</div>
+          <div class="division-status"><span class="status-dot active"></span>Active Division: United States &amp; Belize</div>
           <div class="division-big-slogan">SG<br>Engineering.<br><span>Ideas,<br>Engineered.</span></div>
           <p class="division-desc">Custom fabrication and manufacturing for people who need things built right. From plasma-cut metal structures to CNC-routed woodwork and precision 3D-printed parts — SG Engineering turns technical requirements into physical reality.</p>
           <div class="division-tag-row">
@@ -174,25 +189,34 @@
             <span class="dtag">Wood Working</span>
             <span class="dtag">Laser Engraving</span>
           </div>
-          <a href="#contact" class="btn-primary">Start Your Fabrication Project</a>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:0.5rem;"><a href="engineering.html" class="btn-primary">Explore SG Engineering &rarr;</a></div>
         </div>
         <div class="division-visual reveal" style="transition-delay:0.1s;">
           <div class="visual-card">
-            <div class="visual-card-label">United States — Ohio</div>
+            <div class="visual-card-label">
+              <img src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1fa-1f1f8.png" class="country-flags">
+              <span class="country-badge us">United States</span>
+            </div>
             <div class="visual-card-items">
               <span>FDM 3D Printing</span><span>Rapid Prototyping</span>
               <span>Functional Parts</span><span>Custom Geometries</span><span>DFM Consultation</span>
             </div>
           </div>
           <div class="visual-card">
-            <div class="visual-card-label">&#x1f1e7;&#x1f1ff; Belize — Metal &amp; Structural</div>
+            <div class="visual-card-label">
+              <img src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1e7-1f1ff.png" class="country-flags">
+              <span class="country-badge bz">Belize</span>
+            </div>
             <div class="visual-card-items">
               <span>Plasma Cutting</span><span>Press Brake Bending</span>
               <span>STICK / MIG / TIG Welding</span><span>Milling &amp; Lathe</span><span>Custom Metal Fabrication</span>
             </div>
           </div>
           <div class="visual-card">
-            <div class="visual-card-label">Belize — Digital &amp; CNC</div>
+            <div class="visual-card-label">
+              <img src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1e7-1f1ff.png" class="country-flags">
+              <span class="country-badge bz">Belize</span>
+            </div>
             <div class="visual-card-items">
               <span>CNC Router</span><span>Laser Engraving</span>
               <span>Vinyl Cutting</span><span>Wood Fabrication</span><span>Custom Engravings</span>
@@ -205,40 +229,42 @@
     <!-- SG SIGNS -->
     <div class="division-brand-section" id="sg-signs">
       <div>
-        <div class="section-eyebrow">Division 02 — Active</div>
+        <div class="section-eyebrow">Division 02</div>
       </div>
       <div class="division-layout reverse">
         <div class="division-info reveal">
-          <div class="division-status"><span class="status-dot active"></span>Active Division</div>
+          <div class="division-status"><span class="status-dot active"></span>Active Division: Belize</div>
           <div class="division-big-slogan">SG<br>Signs.<br><span>If They Saw It,<br>We Made It.</span></div>
-          <p class="division-desc">You have a message. We make sure the world sees it. SG Signs delivers bold, high-quality print and signage for businesses, brands, and individuals across Belize — from large-format billboards to custom awnings and commercial prints.</p>
+          <p class="division-desc">You have a message. We make sure the world sees it. SG Signs delivers bold, high-quality print and signage for businesses, brands, and individuals across Belize — from large-format billboards with full structural installation to custom LED signs, vehicle wraps, and engraved drinkware.</p>
           <div class="division-tag-row">
             <span class="dtag">Billboards</span>
-            <span class="dtag">Banners</span>
-            <span class="dtag">Posters</span>
-            <span class="dtag">Flyers</span>
-            <span class="dtag">Awnings</span>
-            <span class="dtag">Vinyl Cutting</span>
+            <span class="dtag">LED Signs</span>
+            <span class="dtag">Vehicle Wraps</span>
+            <span class="dtag">Engraving</span>
+            <span class="dtag">Print</span>
+            <span class="dtag">Custom Products</span>
           </div>
-          <a href="#contact" class="btn-primary">Start a Signage Project</a>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:0.5rem;">
+            <a href="signs.html" class="btn-primary">Explore SG Signs &rarr;</a>
+          </div>
         </div>
         <div class="division-visual reveal" style="transition-delay:0.1s;">
           <div class="visual-card">
-            <div class="visual-card-label">Large Format</div>
+            <div class="visual-card-label">Large Format &amp; Outdoor</div>
             <div class="visual-card-items">
-              <span>Billboards</span><span>Banners</span><span>Awnings</span>
+              <span>Billboards</span><span>Banners</span><span>Feather Flags</span><span>Awnings</span><span>Vehicle Wraps</span>
             </div>
           </div>
           <div class="visual-card">
-            <div class="visual-card-label">Print &amp; Commercial</div>
+            <div class="visual-card-label">Signs &amp; Print</div>
             <div class="visual-card-items">
-              <span>Posters</span><span>Flyers</span><span>Custom Signage</span>
+              <span>LED Box Signs</span><span>Acrylic Signs</span><span>Metal Signs</span><span>Posters</span><span>Flyers</span>
             </div>
           </div>
           <div class="visual-card">
-            <div class="visual-card-label">Cutting &amp; Finishing</div>
+            <div class="visual-card-label">Engraving &amp; Custom Products</div>
             <div class="visual-card-items">
-              <span>Vinyl Cutting (Graphtec)</span><span>Custom Formats</span><span>Any Scale</span>
+              <span>Laser Engraving</span><span>Nametags</span><span>Drinkware Engraving</span><span>Branded Merch</span>
             </div>
           </div>
         </div>
@@ -328,7 +354,10 @@
                 <span class="info-label">Contact</span>
                 <span class="info-value">
                   <span class="founder-email">
-                    <a id="founder-email-link" href="#"></a>
+                    Email: <a id="founder-email-link" href="#"></a>
+                  </span>
+                  <span class = "founder-phone">
+                    <br>Phone Number:<a id="founder-phone-link" href="tel:+15673286272"> (567) 328-6272</a>
                   </span>
                 </span>
               </div>
@@ -346,7 +375,7 @@
         <p class="section-lead">Follow SG Labs across platforms for updates on projects, capabilities, and what's being built next.</p>
       </div>
       <div class="social-grid">
-        <a href="https://www.instagram.com/sglabsco/" class="social-card reveal" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com/sglabsco/" class="social-card reveal" style="transition-delay:0.08s;" target="_blank" rel="noopener">
           <div class="social-icon"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
           <div><div class="social-platform">Instagram</div><div class="social-handle">@sglabsco</div></div>
           <p class="social-desc">Project updates, builds in progress, and behind-the-scenes fabrication.</p>
@@ -356,11 +385,12 @@
           <div><div class="social-platform">LinkedIn</div><div class="social-handle">SG Labs</div></div>
           <p class="social-desc">Professional updates, company milestones, and engineering insights.</p>
         </a>
-        <a href="javascript:void(0)" class="social-card reveal" style="transition-delay:0.24s;" target="_blank" rel="noopener">
+        <!--Update to <a></a> like above once youtube created-->
+        <div class="social-card reveal" style="transition-delay:0.08s;" target="_blank" rel="noopener">
           <div class="social-icon"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></div>
           <div><div class="social-platform">YouTube</div><div class="social-handle">SG Labs</div></div>
           <p class="social-desc">Under Development - Coming Soon<!--Build videos, fabrication walkthroughs, and project documentation.--></p>
-        </a>
+        </div>
       </div>
     </section>
 
@@ -451,9 +481,8 @@
       <div class="footer-right">
         <div class="footer-links">
           <a href="#home">Home</a>
-          <a href="#sglabs">SG Labs</a>
-          <a href="#sg-engineering">Engineering</a>
-          <a href="#sg-signs">Signs</a>
+          <a href="engineering.html">Engineering</a>
+          <a href="signs.html">Signs</a>
           <a href="#sg-robotics">Robotics</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
@@ -462,7 +491,7 @@
       </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         const helloEmail = "hello" + "@" + "sglabsco.com";
         const contactEmail = "contact" + "@" + "sglabsco.com";
         const founderEmail = "sebastian" + "@" + "sglabsco.com";
