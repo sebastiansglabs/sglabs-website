@@ -3,7 +3,7 @@ body {
 }
 
 #signs-hero {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,8 +44,8 @@ body {
 
 .breadcrumb {
     position: fixed;
-    top: 72px; left: 0; right: 0;
-    z-index: 800;
+    top: 71px; left: 0; right: 0;
+    z-index: 901;
     background: rgba(44,93,170,0.97);
     backdrop-filter: blur(8px);
     padding: 0.6rem 4rem;
@@ -340,8 +340,9 @@ body {
 }
 
 @media (max-width: 767px) {
+    body { padding-top: 96px; }
     #signs-hero { padding: calc(60px + 36px) 1.5rem 4rem; }
-    .breadcrumb { padding: 0.6rem 1.5rem; top: 60px; font-size: 0.6rem; }
+    .breadcrumb { padding: 0.6rem 1.5rem; top: 59px; font-size: 0.6rem; }
     .signs-categories { grid-template-columns: 1fr; gap: 1rem; }
     .differentiators-grid { grid-template-columns: 1fr; gap: 1rem; }
     #signs-services, #signs-why, #signs-cta { padding: 4rem 1.5rem; }
@@ -352,6 +353,9 @@ body {
 @media (max-width: 599px) {
     .cta-actions { flex-direction: column; align-items: center; }
     .cta-actions .btn-primary, .cta-actions .btn-ghost { width: 100%; text-align: center; }
+    .hero-actions { flex-direction: column; gap: 0.75rem; }
+    .hero-actions .btn-primary,
+    .hero-actions .btn-ghost { width: 100%; text-align: center; padding: 1rem; }
     nav { height: 60px; }
     .breadcrumb { top: 60px; }
     #signs-hero { padding-top: calc(60px + 36px); }

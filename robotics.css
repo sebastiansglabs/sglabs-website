@@ -6,7 +6,7 @@ body {
 .breadcrumb {
   position: fixed;
   top: 72px; left: 0; right: 0;
-  z-index: 800;
+  z-index: 901;
   background: rgba(44,93,170,0.97);
   backdrop-filter: blur(8px);
   padding: 0.6rem 4rem;

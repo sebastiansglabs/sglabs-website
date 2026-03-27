@@ -6,7 +6,7 @@ body {
 .breadcrumb {
   position: fixed;
   top: 72px; left: 0; right: 0;
-  z-index: 800;
+  z-index: 901;
   background: rgba(44,93,170,0.97);
   backdrop-filter: blur(8px);
   padding: 0.6rem 4rem;
@@ -368,6 +368,7 @@ body {
   body { padding-top: 96px; }
   .breadcrumb { padding: 0.6rem 1.5rem; top: 60px; font-size: 0.6rem; }
   #about-hero, #about-who, #about-mission, #about-values, #about-founder, #about-diff, #about-cta { padding: 4rem 1.5rem; }
+  #about-hero { justify-content: center; }
   .mission-layout { grid-template-columns: 1fr; gap: 2rem; }
   .values-grid { grid-template-columns: 1fr; gap: 1rem; }
   .diff-grid { grid-template-columns: 1fr; gap: 1rem; }

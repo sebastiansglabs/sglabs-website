@@ -27,6 +27,9 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
       </ul>
+      <button class="burger-btn" id="burgerBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
 
     <!-- HERO -->
@@ -104,6 +107,21 @@
       </div>
       <div class="services-grid reveal">
         <div class="service-division">
+          <div class="division-flag"><span class="flag-dot"></span>United States</div>
+          <div class="division-title">Prototyping &amp; 3D Printing</div>
+          <div class="division-region">Ohio, United States</div>
+          <div class="capability-group">
+            <div class="capability-group-label">Additive Manufacturing</div>
+            <ul class="capability-list">
+              <li>FDM 3D Printing</li>
+              <li>Rapid Prototyping</li>
+              <li>Functional Parts &amp; Models</li>
+              <li>Custom Geometries &amp; Assemblies</li>
+              <li>Design for Manufacturing (DFM)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-division">
           <div class="division-flag"><span class="flag-dot"></span>Belize</div>
           <div class="division-title">Fabrication &amp; Manufacturing</div>
           <div class="division-region">Belize, Central America</div>
@@ -133,44 +151,23 @@
           <div class="division-title">Print &amp; Signage</div>
           <div class="division-region">Belize, Central America</div>
           <div class="capability-group">
-            <div class="capability-group-label">Large Format &amp; Outdoor</div>
+            <div class="capability-group-label">Metal &amp; Structural</div>
             <ul class="capability-list">
-              <li>Billboards</li>
-              <li>Banners &amp; Feather Flags</li>
-              <li>Awnings</li>
-              <li>Vehicle Wraps</li>
+              <li>Plasma Cutting</li>
+              <li>Hydraulic Press Brake / Metal Bending</li>
+              <li>Welding (STICK / MIG / TIG)</li>
+              <li>Milling &amp; Lathe Work</li>
+              <li>Custom Metal Fabrication</li>
             </ul>
           </div>
           <div class="capability-group" style="margin-top:1.25rem;">
-            <div class="capability-group-label">Signs &amp; Print</div>
+            <div class="capability-group-label">Digital &amp; CNC</div>
             <ul class="capability-list">
-              <li>LED Box Signs</li>
-              <li>Acrylic, Wood &amp; Metal Signs</li>
-              <li>Posters &amp; Flyers</li>
-              <li>Decals &amp; Vinyl Stickers</li>
-            </ul>
-          </div>
-          <div class="capability-group" style="margin-top:1.25rem;">
-            <div class="capability-group-label">Engraving &amp; Custom Products</div>
-            <ul class="capability-list">
+              <li>CNC Router</li>
               <li>Laser Engraving</li>
-              <li>Nametags &amp; Corporate ID</li>
-              <li>Drinkware &amp; Branded Merch</li>
-            </ul>
-          </div>
-        </div>
-        <div class="service-division">
-          <div class="division-flag"><span class="flag-dot"></span>United States</div>
-          <div class="division-title">Prototyping &amp; 3D Printing</div>
-          <div class="division-region">Ohio, United States</div>
-          <div class="capability-group">
-            <div class="capability-group-label">Additive Manufacturing</div>
-            <ul class="capability-list">
-              <li>FDM 3D Printing</li>
-              <li>Rapid Prototyping</li>
-              <li>Functional Parts &amp; Models</li>
-              <li>Custom Geometries &amp; Assemblies</li>
-              <li>Design for Manufacturing (DFM)</li>
+              <li>Vinyl Cutting (Graphtec)</li>
+              <li>Custom Wood Fabrication</li>
+              <li>Engravings of Any Kind</li>
             </ul>
           </div>
         </div>
@@ -363,7 +360,7 @@
                     Email: <a id="founder-email-link" href="#"></a>
                   </span>
                   <span>
-                    <br>Phone Number: (567) 328-6272
+                    <span class = "founder-phone"><br>Phone: <a href="tel:+15673286272">(567) 328-6272</a></span>
                   </span>
                 </span>
               </div>
@@ -402,79 +399,12 @@
 
     <!-- CONTACT -->
     <section id="contact">
-      <div>
-        <div class="section-eyebrow">Get In Touch</div>
-        <h2 class="section-title">Start a <span>Project</span></h2>
-        <p class="section-lead">Have a project in mind? Tell us what you're building and we'll get back to you within 48 hours.</p>
-      </div>
-      <div class="contact-layout">
-        <div class="contact-info reveal">
-          <div class="contact-detail">
-            <div class="contact-detail-label">Primary Contact</div>
-            <div class="contact-detail-value">
-              <a id="hello-email-link" href="#"></a>
-            </div>
-          </div>
-          <div class="contact-detail">
-            <div class="contact-detail-label">Business Inquiries</div>
-            <div class="contact-detail-value">
-              <a id="contact-email-link" href="#"></a>
-            </div>
-          </div>
-          <div class="contact-detail">
-            <div class="contact-detail-label">Website</div>
-            <div class="contact-detail-value"><a href="https://sglabsco.com" target="_blank">sglabsco.com</a></div>
-          </div>
-          <div class="contact-detail">
-            <div class="contact-detail-label">Headquarters</div>
-            <div class="contact-detail-value">Belize, Central America</div>
-          </div>
-          <div class="contact-detail">
-            <div class="contact-detail-label">US Operations</div>
-            <div class="contact-detail-value">Ohio, United States</div>
-          </div>
-          <p class="contact-note">We work with individuals, small businesses, and organizations across Belize and the United States. Whether it's a single fabricated part or a full signage project, every inquiry receives a personal response.</p>
-        </div>
-        <div style="transition-delay:0.1s;">
-          <!--Netlify form connection-->
-          <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" onsubmit="return false;">
-            <input type="hidden" name="form-name" value="contact" />
-            <div class="form-row">
-              <div class="form-group"><label for="fname">First Name</label><input type="text" id="fname" name="fname" placeholder="Sebastian" /><span class="field-error" id="err-fname"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>First name is required</span></div>
-              <div class="form-group"><label for="lname">Last Name</label><input type="text" id="lname" name="lname" placeholder="Garcia" /><span class="field-error" id="err-lname"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>Last name is required</span></div>
-            </div>
-            <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="you@example.com" /><span class="field-error" id="err-email"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>A valid email is required</span></div>
-            <div class="form-group">
-              <label for="service">Service of Interest</label>
-              <select id="service" name="service" onchange="handleServiceChange(this)"> 
-                <option value="" disabled selected>Select a service...</option>
-                <option value="3d-printing">3D Printing — SG Engineering (US)</option>
-                <option value="metal-fab">Metal Fabrication — SG Engineering (Belize)</option>
-                <option value="cnc">CNC / Laser / Engraving — SG Engineering (Belize)</option>
-                <option value="print-signage">Print &amp; Signage — SG Signs (Belize)</option>
-                <option value="consulting">Design Consultation</option>
-                <option value="other">Other / Not Sure Yet</option>
-              </select>
-            <span class="field-error" id="err-service"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>Please select a service</span>
-            </div>
-            <div id="otherServiceWrap" style="overflow:hidden; max-height:0; opacity:0; transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease; margin-top:0;">
-              <div class="form-group">
-                <label for="otherService">Tell us what you need</label>
-                <input type="text" id="otherService" name="otherService" placeholder="Describe your interest or project type..." />
-              </div>
-            </div>
-            <div class="form-group"><label for="message">Project Details</label><textarea id="message" name="message" placeholder="Describe your project..."></textarea><span class="field-error" id="err-message"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>Project details are required</span></div>
-            <button class="form-submit" onclick="handleSubmit()">
-              Send Message
-              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </button>
-          </form>
-          <div class="form-success" id="formSuccess">
-            <div class="success-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-            <div class="success-title">Message Received</div>
-            <p class="success-msg">Thank you for reaching out. We'll be in touch within 48 hours.</p>
-          </div>
-        </div>
+      <div class="cta-eyebrow">Ready to Start?</div>
+      <h2 class="cta-headline">Your Idea.<br><span>Built.</span></h2>
+      <p class="cta-sub">Tell us what you're building and we'll get back to you within 48 hours with a plan and timeline.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn-primary">Start a Project</a>
+        <a href="#sglabs" class="btn-ghost">Learn More</a>
       </div>
     </section>
 
@@ -497,6 +427,67 @@
         <div>© 2025 SG Labs · sglabsco.com  · Belize, Central America</div>
       </div>
     </footer>
+
+    
+    <!-- MOBILE DRAWER -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="mobile-drawer-panel">
+        <div class="mobile-drawer-header">
+          <button class="mobile-drawer-close" id="drawerClose" aria-label="Close menu">&#x2715;</button>
+        </div>
+        <nav class="mobile-drawer-nav">
+          <a href="#home">Home</a>
+          <a href="engineering.html">Engineering</a>
+          <a href="signs.html">Signs</a>
+          <a href="robotics.html">Robotics</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="mob-cta">Get in Touch</a>
+        </nav>
+        <div class="mobile-drawer-foot">SG Labs &middot; sglabsco.com</div>
+      </div>
+    </div>
+
+    <script>
+      // ── Burger menu ──
+      const burgerBtn  = document.getElementById('burgerBtn');
+      const drawer     = document.getElementById('mobileDrawer');
+      const closeBtn   = document.getElementById('drawerClose');
+
+      function openDrawer() {
+        // iOS-safe scroll lock: freeze body in place
+        const scrollY = window.scrollY;
+        document.body.style.position = 'fixed';
+        document.body.style.top      = '-' + scrollY + 'px';
+        document.body.style.width    = '100%';
+        document.body.dataset.scrollY = scrollY;
+        burgerBtn.classList.add('open');
+        drawer.classList.add('open');
+      }
+
+      function closeDrawer() {
+        const savedY = parseInt(document.body.dataset.scrollY || '0');
+        // Restore scroll BEFORE unfixing body to prevent visible jump
+        document.body.style.top = '';
+        document.body.style.position = '';
+        document.body.style.width = '';
+        window.scrollTo({ top: savedY, behavior: 'instant' });
+        burgerBtn.classList.remove('open');
+        drawer.classList.remove('open');
+      }
+
+      burgerBtn.addEventListener('click', openDrawer);
+      closeBtn.addEventListener('click', closeDrawer);
+
+      // Tap the dark overlay (not the panel) to close
+      drawer.addEventListener('click', function(e) {
+        if (e.target === drawer) closeDrawer();
+      });
+
+      // Close on any nav link tap
+      drawer.querySelectorAll('.mobile-drawer-nav a').forEach(function(link) {
+        link.addEventListener('click', closeDrawer);
+      });
+    </script>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         const helloEmail = "hello" + "@" + "sglabsco.com";
@@ -521,79 +512,7 @@
           founderLink.textContent = founderEmail;
         }
 
-      function handleServiceChange(sel) {
-        const wrap = document.getElementById('otherServiceWrap');
-        if (sel.value === 'other') {
-          wrap.style.maxHeight = '100px';
-          wrap.style.opacity = '1';
-          wrap.style.marginTop = '0';
-        } else {
-          wrap.style.maxHeight = '0';
-          wrap.style.opacity = '0';
-          wrap.style.marginTop = '0';
-          document.getElementById('otherService').value = '';
-        }
-      }
 
-      // animations removed for compatibility
-
-      function clearErrors() {
-        ['fname','lname','email','service','message'].forEach(id => {
-          const el = document.getElementById(id);
-          const err = document.getElementById('err-' + id);
-          if (el) el.classList.remove('invalid');
-          if (err) err.classList.remove('visible');
-        });
-      }
-
-      function handleSubmit() {
-        clearErrors();
-        const fields = [
-          { id: 'fname', check: v => v.trim() !== '' },
-          { id: 'lname', check: v => v.trim() !== '' },
-          { id: 'email', check: v => /^[^@]+@[^@]+\.[^@]+$/.test(v.trim()) },
-          { id: 'service', check: v => v !== '' },
-          { id: 'message', check: v => v.trim() !== '' }
-        ];
-
-        let valid = true;
-        fields.forEach(f => {
-          const el = document.getElementById(f.id);
-          const err = document.getElementById('err-' + f.id);
-          if (!el) return;
-          if (!f.check(el.value)) {
-            el.classList.add('invalid');
-            if (err) err.classList.add('visible');
-            valid = false;
-          }
-        });
-
-        if (!valid) return;
-
-        const form = document.getElementById('contactForm');
-        const formData = new FormData(form);
-
-        fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(formData).toString()
-        })
-        .then(() => {
-          form.style.display = 'none';
-          document.getElementById('formSuccess').classList.add('visible');
-        })
-        .catch(() => alert('Something went wrong. Please try again.'));
-      }
-
-      // Clear error on input
-      ['fname','lname','email','service','message'].forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.addEventListener('input', () => {
-          el.classList.remove('invalid');
-          const err = document.getElementById('err-' + id);
-          if (err) err.classList.remove('visible');
-        });
-      });
 
       const sections = document.querySelectorAll('section[id], div[id]');
       const navLinks = document.querySelectorAll('.nav-links a');
