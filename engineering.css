@@ -213,6 +213,7 @@ body{
 
 /* ── PROCESS SECTION ── */
 #eng-process {
+    scroll-margin-top: 3rem;
     background: var(--navy);
     padding: 6rem 4rem;
     border-top: 1px solid var(--rule);
@@ -285,6 +286,7 @@ body{
 
 /* ── WHY SG ENGINEERING ── */
 #eng-why {
+    scroll-margin: 3rem;
     background: var(--offwhite);
     padding: 6rem 4rem;
     border-top: 1px solid var(--rule-light);
