@@ -3,13 +3,13 @@ body {
 }
 
 #signs-hero {
-    min-height: 90vh;
+    min-height: calc(100vh - 108px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 4rem;
     padding-top: 0;
-    padding-bottom: 5rem;
+    padding-bottom: 0;
     position: relative;
     overflow: hidden;
     background: var(--offwhite) !important;
@@ -44,7 +44,7 @@ body {
 
 .breadcrumb {
     position: fixed;
-    top: 71px; left: 0; right: 0;
+    top: 72px; left: 0; right: 0;
     z-index: 901;
     background: rgba(44,93,170,0.97);
     backdrop-filter: blur(8px);

@@ -4,13 +4,13 @@ body{
 
 /* ── HERO ── */
 #eng-hero {
-    min-height: 100vh;
+    min-height: calc(100vh - 108px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 4rem;
     padding-top: 0;
-    padding-bottom: 5rem;
+    padding-bottom: 0;
     position: relative;
     overflow: hidden;
     background: var(--navy) !important;

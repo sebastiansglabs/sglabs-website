@@ -30,8 +30,8 @@ body {
 #robotics-hero {
   min-height: calc(100vh - 108px);
   display: flex;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
+  justify-content: flex-start;
   padding: 4rem;
   position: relative;
   overflow: hidden;
@@ -207,4 +207,4 @@ body {
   .robotics-actions { flex-direction: column; }
   .robotics-actions .btn-primary,
   .robotics-actions .btn-ghost { width: 100%; text-align: center; }
-}
+} 
