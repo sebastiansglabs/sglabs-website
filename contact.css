@@ -1,3 +1,5 @@
+html { scroll-padding-top: 124px; }
+
 body {
   padding-top: 108px;
 }
@@ -25,6 +27,31 @@ body {
 .breadcrumb a:hover { color: rgba(255,255,255,0.7); }
 .breadcrumb-sep { opacity: 0.4; }
 .breadcrumb-current { color: white; font-weight: 500; }
+
+/* ── HERO ── */
+#contact-hero {
+  min-height: calc(100vh - 108px);
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 2rem 4rem;
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(120% 90% at 80% -10%, #16294a 0%, transparent 55%),
+    radial-gradient(100% 80% at -10% 110%, #122340 0%, transparent 50%),
+    linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+  border-bottom: 1px solid var(--rule);
+}
+.contact-status {
+  align-self: flex-start; width: -moz-fit-content; width: fit-content; max-width: 100%;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: 'DM Mono', monospace; font-size: 0.65rem;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--blue-light);
+  font-weight: 600; margin-bottom: 1.75rem;
+  padding: 0.45rem 1rem 0.45rem 0.85rem;
+  border: 1px solid rgba(74,127,212,0.25);
+  border-radius: 999px;
+  background: rgba(74,127,212,0.06);
+  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+}
 
 /* ── SOCIAL SECTION ── */
 #contact-social {

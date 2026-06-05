@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel=" stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>  
     <!-- NAV -->
@@ -34,38 +34,37 @@
 
     <!-- HERO -->
     <section id="home">
-      <div class="hero-bg"><div class="hero-accent"></div></div>
+      <div class="hero-bg"><div class="hero-accent"></div><div class="hero-orb"></div></div>
       <div class="hero-content">
-        <div class="hero-eyebrow">Applied Engineering &amp; Robotics Systems</div>
         <h1 class="hero-headline">
           From Concept<br>
           <span>To Creation.</span>
         </h1>
-        <div class="hero-slogan">SG Labs — Ideas, Engineered.</div>
-        <p class="hero-sub">An engineering and innovation company operating across the United States and Belize — designing, fabricating, and manufacturing with precision and purpose.</p>
+        <div class="hero-slogan">SG Labs — Engineering. Fabrication. Signage. Innovation.</div>
+        <p class="hero-sub">SG Labs builds engineered, fabricated, and visual branding solutions across Belize and the United States, bringing ideas from concept to finished execution with precision and purpose.</p>
         <div class="hero-actions">
           <a href="#sglabs" class="btn-primary">Who We Are</a>
           <a href="#contact" class="btn-ghost">Get in Touch</a>
         </div>
       </div>
       <div class="hero-stats">
-        <div class="stat"><span class="stat-num">2</span><span class="stat-label">Operating Countries</span></div>
-        <div class="stat"><span class="stat-num">2</span><span class="stat-label">Active Divisions</span></div>
-        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Intl. Awards</span></div>
+        <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">Operating Countries</span></div>
+        <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">Active Divisions</span></div>
+        <div class="stat"><span class="stat-num" data-count="3" data-suffix="+">0</span><span class="stat-label">Intl. Awards</span></div>
       </div>
     </section>
 
     <!-- SG LABS -->
     <section id="sglabs">
-      <div>
+      <div class="reveal">
         <div class="section-eyebrow">The Parent Brand</div>
         <h2 class="section-title">What Is <span>SG Labs?</span></h2>
       </div>
       <div class="brand-grid">
-        <div>
+        <div class="reveal">
           <p class="brand-statement">An <em>innovation platform</em> built to engineer, fabricate, and launch the ideas that move people forward.</p>
           <p class="brand-body">SG Labs is the umbrella company behind everything we build. It is not a single product or service — it is a system. A launchpad. A structure designed to grow into multiple ventures, divisions, and products over time, all anchored by one commitment: turning ideas into reality with precision and purpose.</p>
-          <p class="brand-body">Today, SG Labs operates two active divisions — SG Engineering and SG Signs — serving clients in Belize and the United States. Tomorrow, the ecosystem grows.</p>
+          <p class="brand-body">Today, SG Labs operates through active divisions in engineering and signage, with future divisions in development as the company continues to grow.</p>
           <div class="brand-slogan-display">
             <span class="slogan-label">SG Labs</span>
             <span class="slogan-text">From Concept to Creation</span>
@@ -103,85 +102,56 @@
           <div class="section-eyebrow">What We Do</div>
           <h2 class="section-title">Capabilities &amp;<br><span>Service Areas</span></h2>
         </div>
-        <p class="services-intro">SG Labs operates across two core service divisions — Engineering &amp; Fabrication, and Print &amp; Signage — serving clients in Belize and the United States. Every project is handled with precision, from concept through delivery.</p>
+        <p class="services-intro">SG Labs operates through specialized divisions across engineering, fabrication, manufacturing, and print signage. Every project is handled with precision, from concept through delivery.</p>
       </div>
       <div class="services-grid reveal">
         <div class="service-division">
-          <div class="division-flag"><span class="flag-dot"></span>United States</div>
+          <div class="service-badges"><span class="service-badge us"><img class="badge-flag" src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1fa-1f1f8.png" alt="United States flag">United States</span><span class="service-badge bz"><img class="badge-flag" src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1e7-1f1ff.png" alt="Belize flag">Belize</span></div>
           <div class="division-title">Prototyping &amp; 3D Printing</div>
-          <div class="division-region">Ohio, United States</div>
-          <div class="capability-group">
-            <div class="capability-group-label">Additive Manufacturing</div>
-            <ul class="capability-list">
-              <li>FDM 3D Printing</li>
-              <li>Rapid Prototyping</li>
-              <li>Functional Parts &amp; Models</li>
-              <li>Custom Geometries &amp; Assemblies</li>
-              <li>Design for Manufacturing (DFM)</li>
-            </ul>
-          </div>
+          <p class="service-desc">Rapid 3D printing and prototyping for functional parts, models, and custom assemblies.</p>
+          <ul class="capability-list">
+            <li>FDM 3D Printing</li>
+            <li>Rapid Prototyping</li>
+            <li>Functional Parts and Models</li>
+            <li>Custom Geometries and Assemblies</li>
+          </ul>
+          <a href="engineering.html" class="service-link">Explore SG Engineering <span class="arrow">&rarr;</span></a>
         </div>
         <div class="service-division">
-          <div class="division-flag"><span class="flag-dot"></span>Belize</div>
+          <div class="service-badges"><span class="service-badge bz"><img class="badge-flag" src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1e7-1f1ff.png" alt="Belize flag">Belize</span></div>
           <div class="division-title">Fabrication &amp; Manufacturing</div>
-          <div class="division-region">Belize, Central America</div>
-          <div class="capability-group">
-            <div class="capability-group-label">Metal &amp; Structural</div>
-            <ul class="capability-list">
-              <li>Plasma Cutting</li>
-              <li>Hydraulic Press Brake / Metal Bending</li>
-              <li>Welding (STICK / MIG / TIG)</li>
-              <li>Milling &amp; Lathe Work</li>
-              <li>Custom Metal Fabrication</li>
-            </ul>
-          </div>
-          <div class="capability-group" style="margin-top:1.25rem;">
-            <div class="capability-group-label">Digital &amp; CNC</div>
-            <ul class="capability-list">
-              <li>CNC Router</li>
-              <li>Laser Engraving</li>
-              <li>Vinyl Cutting (Graphtec)</li>
-              <li>Custom Wood Fabrication</li>
-              <li>Engravings of Any Kind</li>
-            </ul>
-          </div>
+          <p class="service-desc">Metal, CNC, and custom fabrication for structural, mechanical, and one-off builds.</p>
+          <ul class="capability-list">
+            <li>Plasma Cutting and Metal Bending</li>
+            <li>Welding and Metal Fabrication</li>
+            <li>CNC Routing and Wood Fabrication</li>
+            <li>Laser Engraving and Vinyl Cutting</li>
+          </ul>
+          <a href="engineering.html" class="service-link">Explore SG Engineering <span class="arrow">&rarr;</span></a>
         </div>
         <div class="service-division">
-          <div class="division-flag"><span class="flag-dot"></span>Belize</div>
+          <div class="service-badges"><span class="service-badge bz"><img class="badge-flag" src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1e7-1f1ff.png" alt="Belize flag">Belize</span></div>
           <div class="division-title">Print &amp; Signage</div>
-          <div class="division-region">Belize, Central America</div>
-          <div class="capability-group">
-            <div class="capability-group-label">Metal &amp; Structural</div>
-            <ul class="capability-list">
-              <li>Plasma Cutting</li>
-              <li>Hydraulic Press Brake / Metal Bending</li>
-              <li>Welding (STICK / MIG / TIG)</li>
-              <li>Milling &amp; Lathe Work</li>
-              <li>Custom Metal Fabrication</li>
-            </ul>
-          </div>
-          <div class="capability-group" style="margin-top:1.25rem;">
-            <div class="capability-group-label">Digital &amp; CNC</div>
-            <ul class="capability-list">
-              <li>CNC Router</li>
-              <li>Laser Engraving</li>
-              <li>Vinyl Cutting (Graphtec)</li>
-              <li>Custom Wood Fabrication</li>
-              <li>Engravings of Any Kind</li>
-            </ul>
-          </div>
+          <p class="service-desc">Signs, graphics, and branded print products for businesses, events, and organizations.</p>
+          <ul class="capability-list">
+            <li>Billboards, Banners, and Posters</li>
+            <li>Storefront and Roadside Signs</li>
+            <li>Vehicle, Window, and Vinyl Graphics</li>
+            <li>Plaques, Nametags, and Branded Products</li>
+          </ul>
+          <a href="signs.html" class="service-link">Explore SG Signs <span class="arrow">&rarr;</span></a>
         </div>
       </div>
     </section>
 
     <!-- SG ENGINEERING -->
     <div class="division-brand-section" id="sg-engineering">
-      <div>
+      <div class="reveal">
         <div class="section-eyebrow">Division 01</div>
       </div>
       <div class="division-layout">
         <div class="division-info reveal">
-          <div class="division-status"><span class="status-dot active"></span>Active Division: United States &amp; Belize</div>
+          <div class="division-status"><span class="status-dot active"></span>Operating in United States &amp; Belize</div>
           <div class="division-big-slogan">SG<br>Engineering.<br><span>Ideas,<br>Engineered.</span></div>
           <p class="division-desc">Custom fabrication and manufacturing for people who need things built right. From plasma-cut metal structures to CNC-routed woodwork and precision 3D-printed parts — SG Engineering turns technical requirements into physical reality.</p>
           <div class="division-tag-row">
@@ -196,30 +166,21 @@
         </div>
         <div class="division-visual reveal" style="transition-delay:0.1s;">
           <div class="visual-card">
-            <div class="visual-card-label">
-              <img src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1fa-1f1f8.png" class="country-flags">
-              <span class="country-badge us">United States</span>
-            </div>
+            <div class="service-badges"><span class="service-badge us"><img class="badge-flag" src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1fa-1f1f8.png" alt="United States flag">United States</span><span class="service-badge bz"><img class="badge-flag" src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1e7-1f1ff.png" alt="Belize flag">Belize</span></div>
             <div class="visual-card-items">
               <span>FDM 3D Printing</span><span>Rapid Prototyping</span>
               <span>Functional Parts</span><span>Custom Geometries</span><span>DFM Consultation</span>
             </div>
           </div>
           <div class="visual-card">
-            <div class="visual-card-label">
-              <img src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1e7-1f1ff.png" class="country-flags">
-              <span class="country-badge bz">Belize</span>
-            </div>
+            <div class="service-badges"><span class="service-badge bz"><img class="badge-flag" src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1e7-1f1ff.png" alt="Belize flag">Belize</span></div>
             <div class="visual-card-items">
               <span>Plasma Cutting</span><span>Press Brake Bending</span>
               <span>STICK / MIG / TIG Welding</span><span>Milling &amp; Lathe</span><span>Custom Metal Fabrication</span>
             </div>
           </div>
           <div class="visual-card">
-            <div class="visual-card-label">
-              <img src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1e7-1f1ff.png" class="country-flags">
-              <span class="country-badge bz">Belize</span>
-            </div>
+            <div class="service-badges"><span class="service-badge bz"><img class="badge-flag" src="https://images.emojiterra.com/twitter/v14.0/1024px/1f1e7-1f1ff.png" alt="Belize flag">Belize</span></div>
             <div class="visual-card-items">
               <span>CNC Router</span><span>Laser Engraving</span>
               <span>Vinyl Cutting</span><span>Wood Fabrication</span><span>Custom Engravings</span>
@@ -231,12 +192,12 @@
 
     <!-- SG SIGNS -->
     <div class="division-brand-section" id="sg-signs">
-      <div>
+      <div class="reveal">
         <div class="section-eyebrow">Division 02</div>
       </div>
       <div class="division-layout reverse">
         <div class="division-info reveal">
-          <div class="division-status"><span class="status-dot active"></span>Active Division: Belize</div>
+          <div class="division-status"><span class="status-dot active"></span>Operating in Belize</div>
           <div class="division-big-slogan">SG<br>Signs.<br><span>If They Saw It,<br>We Made It.</span></div>
           <p class="division-desc">You have a message. We make sure the world sees it. SG Signs delivers bold, high-quality print and signage for businesses, brands, and individuals across Belize — from large-format billboards with full structural installation to custom LED signs, vehicle wraps, and engraved drinkware.</p>
           <div class="division-tag-row">
@@ -276,7 +237,7 @@
 
     <!-- SG ROBOTICS -->
     <div class="division-brand-section" id="sg-robotics">
-      <div>
+      <div class="reveal">
         <div class="section-eyebrow">Division 03 — Coming Soon</div>
       </div>
       <div class="division-layout">
@@ -311,14 +272,14 @@
 
     <!-- ABOUT -->
     <section id="about">
-      <div>
+      <div class="reveal">
         <div class="section-eyebrow">The Founder</div>
         <h2 class="section-title">About <span>Sebastian Garcia</span></h2>
       </div>
       <div class="about-grid">
-        <div class="about-left reveal">
+        <div class="reveal">
           <p class="founder-intro">My name is <strong>Sebastian Garcia</strong> — founder of SG Labs, mechanical engineering and computer science student, and aspiring builder of things that matter.</p>
-          <p class="founder-body">Originally from Belize, I'm currently a sophomore pursuing a double major in Mechanical Engineering and Computer Science at Ohio Northern University. I've had a deep pull toward engineering and robotics for as long as I can remember — it's not just a career path, it's how I think.</p>
+          <p class="founder-body">Originally from Belize, I'm currently a junior pursuing a double major in Mechanical Engineering and Computer Science at Ohio Northern University. I've had a deep pull toward engineering and robotics for as long as I can remember — it's not just a career path, it's how I think.</p>
           <p class="founder-body">SG Labs was built to follow in the footsteps of my parents, who built their own business from the ground up. It's my way of doing the same — creating something real, starting with the tools and capabilities I have access to today, and scaling it deliberately over time. The mission isn't just to build products; it's to help people bring their ideas to life and to give back to the communities that raised me.</p>
           <div class="awards-block reveal">
             <div class="awards-label">FIRST Robotics — International Recognition</div>
@@ -327,11 +288,11 @@
             <div class="award-item">Zhang Heng Engineering Award — FIRST Global Challenge (FGC)</div>
           </div>
         </div>
-        <div class="about-right reveal" style="transition-delay:0.1s;">
+        <div class="reveal" style="transition-delay:0.1s;">
           <div class="founder-card">
             <div class="founder-card-header">
               <div class="founder-avatar" style="padding:0;overflow:hidden;border:2px solid rgba(255,255,255,0.4);">
-                <img src="founder_headshot.png" class="founder-headshot">
+                <img src="founder_headshot.png" class="founder-headshot" alt="Sebastian Garcia">
               </div>
               <div>
                 <span class="founder-card-name">Sebastian Garcia</span>
@@ -343,7 +304,7 @@
               <div class="info-divider"></div>
               <div class="info-row">
                 <span class="info-label">Academic Background</span>
-                <span class="info-value">Mechanical Engineering &amp; Computer Science<br><span style="color:var(--muted);font-size:0.82rem;">Ohio Northern University, Sophomore</span></span>
+                <span class="info-value">Mechanical Engineering &amp; Computer Science<br><span style="color:var(--muted);font-size:0.82rem;">Ohio Northern University, Junior</span></span>
               </div>
               <div class="info-divider"></div>
               <div class="info-row">
@@ -372,7 +333,7 @@
 
     <!-- SOCIAL -->
     <section id="social">
-      <div>
+      <div class="reveal">
         <div class="section-eyebrow">Follow our Journey</div>
         <h2 class="section-title">Find Us<br><span>Online</span></h2>
         <p class="section-lead">Follow SG Labs across platforms for updates on projects, capabilities, and what's being built next.</p>
@@ -399,12 +360,12 @@
 
     <!-- CONTACT -->
     <section id="contact">
-      <div class="cta-eyebrow">Ready to Start?</div>
-      <h2 class="cta-headline">Your Idea.<br><span>Built.</span></h2>
-      <p class="cta-sub">Tell us what you're building and we'll get back to you within 48 hours with a plan and timeline.</p>
-      <div class="cta-actions">
+      <div class="cta-eyebrow reveal">Ready to Start?</div>
+      <h2 class="cta-headline reveal" style="transition-delay:0.06s;">Your Idea.<br><span>Built.</span></h2>
+      <p class="cta-sub reveal" style="transition-delay:0.12s;">Tell us what you're building and we'll get back to you within 48 hours with a plan and timeline.</p>
+      <div class="cta-actions reveal" style="transition-delay:0.18s;">
         <a href="contact.html" class="btn-primary">Start a Project</a>
-        <a href="#sglabs" class="btn-ghost">Learn More</a>
+        <a href="about.html" class="btn-ghost">Learn More</a>
       </div>
     </section>
 
@@ -412,7 +373,7 @@
     <footer>
       <div>
         <div class="footer-logo-text">SG Labs</div>
-        <div class="footer-tagline">From Concept to Creation · Applied Engineering &amp; Robotics Systems</div>
+        <div class="footer-tagline">From Concept to Creation</div>
       </div>
       <div class="footer-right">
         <div class="footer-links">
@@ -424,7 +385,7 @@
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </div>
-        <div>© 2025 SG Labs · sglabsco.com  · Belize, Central America</div>
+        <div>© 2026 SG Labs · sglabsco.com · Belize, Central America</div>
       </div>
     </footer>
 
@@ -514,13 +475,59 @@
 
 
 
+      const navEl    = document.querySelector('nav');
       const sections = document.querySelectorAll('section[id], div[id]');
       const navLinks = document.querySelectorAll('.nav-links a');
-      window.addEventListener('scroll', () => {
+      function onScroll() {
         let current = '';
         sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id') || ''; });
         navLinks.forEach(link => { link.style.color = link.getAttribute('href') === '#' + current ? 'var(--offwhite)' : ''; });
-      });
+        if (navEl) navEl.classList.toggle('scrolled', window.scrollY > 12);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // ── Scroll reveal ──
+      const revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        revealEls.forEach(el => io.observe(el));
+      } else {
+        revealEls.forEach(el => el.classList.add('is-visible'));
+      }
+
+      // ── Stat count-up ──
+      const counters = document.querySelectorAll('.stat-num[data-count]');
+      function animateCount(el) {
+        const target = parseInt(el.getAttribute('data-count'), 10) || 0;
+        const suffix = el.getAttribute('data-suffix') || '';
+        const duration = 1100;
+        const start = performance.now();
+        function tick(now) {
+          const p = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(eased * target) + (p === 1 ? suffix : '');
+          if (p < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
+      if ('IntersectionObserver' in window && counters.length) {
+        const co = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) { animateCount(entry.target); obs.unobserve(entry.target); }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach(el => co.observe(el));
+      } else {
+        counters.forEach(el => { el.textContent = el.getAttribute('data-count') + (el.getAttribute('data-suffix') || ''); });
+      }
     </script>
   </body>
 </html>

@@ -63,7 +63,7 @@
         <div>
           <p class="brand-statement">An <em>innovation platform</em> built to engineer, fabricate, and launch the ideas that move people forward.</p>
           <p class="brand-body">SG Labs is the umbrella company behind everything we build. It is not a single product or service — it is a system. A launchpad. A structure designed to grow into multiple ventures, divisions, and products over time, all anchored by one commitment: turning ideas into reality with precision and purpose.</p>
-          <p class="brand-body">Today, SG Labs operates two active divisions — SG Engineering and SG Signs — serving clients in Belize and the United States. Tomorrow, the ecosystem grows.</p>
+          <p class="brand-body">Today, SG Labs operates through active divisions in engineering and signage, with future divisions in development as the company continues to grow.</p>
           <div class="brand-slogan-display">
             <span class="slogan-label">SG Labs</span>
             <span class="slogan-text">From Concept to Creation</span>
@@ -97,11 +97,11 @@
     <!-- MISSION -->
     <section id="about-mission">
       <div class="mission-layout">
-        <div class="mission-left">
+        <div>
           <div class="section-eyebrow">Why We Exist</div>
           <h2 class="section-title">Our <span>Mission</span></h2>
         </div>
-        <div class="mission-right">
+        <div>
           <p class="mission-statement">"To help people make their dreams a reality, and help as many people as possible move the world forward."</p>
           <p class="mission-body">SG Labs was built on the belief that great ideas deserve to exist in the real world. Too many concepts stay on paper because people don't have access to the right tools, the right expertise, or the right team. We exist to change that — to be the bridge between what someone imagines and what can actually be built.</p>
           <p class="mission-body">From a student in Ohio to a fabrication shop in Belize, every project we take on is a step toward that mission — helping people, communities, and businesses bring their ideas to life.</p>
@@ -157,9 +157,9 @@
         <h2 class="section-title">About <span>Sebastian Garcia</span></h2>
       </div>
       <div class="about-grid">
-        <div class="about-left">
+        <div>
           <p class="founder-intro">My name is <strong>Sebastian Garcia</strong> — founder of SG Labs, mechanical engineering and computer science student, and aspiring builder of things that matter.</p>
-          <p class="founder-body">Originally from Belize, I'm currently a sophomore pursuing a double major in Mechanical Engineering and Computer Science at Ohio Northern University. I've had a deep pull toward engineering and robotics for as long as I can remember — it's not just a career path, it's how I think.</p>
+          <p class="founder-body">Originally from Belize, I'm currently a junior pursuing a double major in Mechanical Engineering and Computer Science at Ohio Northern University. I've had a deep pull toward engineering and robotics for as long as I can remember — it's not just a career path, it's how I think.</p>
           <p class="founder-body">SG Labs was built to follow in the footsteps of my parents, who built their own business from the ground up. It's my way of doing the same — creating something real, starting with the tools and capabilities I have access to today, and scaling it deliberately over time. The mission isn't just to build products; it's to help people bring their ideas to life and to give back to the communities that raised me.</p>
           <p class="founder-body">I believe the best engineering starts with listening — understanding what someone actually needs before picking up a tool or opening a CAD file. That principle drives how every project at SG Labs gets done.</p>
           <div class="awards-block">
@@ -169,7 +169,7 @@
             <div class="award-item">Zhang Heng Engineering Award — FIRST Global Challenge (FGC)</div>
           </div>
         </div>
-        <div class="about-right">
+        <div>
           <div class="founder-card">
             <div class="founder-card-header">
               <div class="founder-avatar" style="padding:0;overflow:hidden;border:2px solid rgba(255,255,255,0.4);">
@@ -185,7 +185,7 @@
               <div class="info-divider"></div>
               <div class="info-row">
                 <span class="info-label">Academic Background</span>
-                <span class="info-value">Mechanical Engineering &amp; Computer Science<br><span style="color:var(--muted);font-size:0.82rem;">Ohio Northern University, Sophomore</span></span>
+                <span class="info-value">Mechanical Engineering &amp; Computer Science<br><span style="color:var(--muted);font-size:0.82rem;">Ohio Northern University, Junior</span></span>
               </div>
               <div class="info-divider"></div>
               <div class="info-row">
@@ -266,7 +266,7 @@
     <footer>
       <div>
         <div class="footer-logo-text">SG Labs</div>
-        <div class="footer-tagline">From Concept to Creation · Applied Engineering &amp; Robotics Systems</div>
+        <div class="footer-tagline">From Concept to Creation</div>
       </div>
       <div class="footer-right">
         <div class="footer-links">
@@ -276,7 +276,7 @@
           <a href="robotics.html">Robotics</a>
           <a href="contact.html">Contact</a>
         </div>
-        <div>© 2025 SG Labs · sglabsco.com · Belize, Central America</div>
+        <div>© 2026 SG Labs · sglabsco.com · Belize, Central America</div>
       </div>
     </footer>
 
@@ -347,6 +347,12 @@
       drawer.querySelectorAll('.mobile-drawer-nav a').forEach(function(link) {
         link.addEventListener('click', closeDrawer);
       });
+
+      // Nav: darken on scroll (match homepage)
+      var navEl = document.querySelector('nav');
+      function onNavScroll() { if (navEl) navEl.classList.toggle('scrolled', window.scrollY > 12); }
+      window.addEventListener('scroll', onNavScroll, { passive: true });
+      onNavScroll();
     </script>
 
   </body>

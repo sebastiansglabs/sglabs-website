@@ -1,3 +1,5 @@
+html { scroll-padding-top: 124px; }
+
 body {
   padding-top: 108px;
 }
@@ -99,9 +101,9 @@ body {
 .signs-category-card {
     background: rgba(255,255,255,0.03);
     border: 1px solid var(--rule);
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 2rem 2.25rem;
-    transition: border-color 0.3s, background 0.3s;
+    transition: transform 0.4s var(--ease-out), border-color 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out), background 0.4s var(--ease-out);
     position: relative;
     overflow: hidden;
 }
@@ -117,8 +119,10 @@ body {
     transition: transform 0.4s ease;
 }
 
-.signs-category-card:hover{ 
-    border-color: rgba(44,93,170,0.4); background: rgba(44,93,170,0.05); 
+.signs-category-card:hover{
+    transform: translateY(-4px);
+    border-color: rgba(74,127,212,0.5); background: rgba(44,93,170,0.08);
+    box-shadow: 0 18px 44px -18px rgba(44,93,170,0.45);
 }
 
 .signs-category-card:hover .signs-category-icon{
@@ -212,16 +216,16 @@ body {
 .diff-card {
     background: white;
     border: 1px solid rgba(44,93,170,0.12);
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 2rem;
-    transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
+    transition: transform 0.4s var(--ease-out), border-color 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
     -webkit-tap-highlight-color: transparent;
 }
 
 .diff-card:hover {
+    transform: translateY(-4px);
     border-color: rgba(44,93,170,0.4);
-    box-shadow: 0 0 0 2px rgba(44,93,170,0.1);
-    background: rgba(44,93,170,0.04);
+    box-shadow: 0 18px 40px -18px rgba(44,93,170,0.45);
 }
 
 .diff-card:hover .diff-number{

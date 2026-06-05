@@ -1,3 +1,5 @@
+html { scroll-padding-top: 124px; }
+
 body{
     padding-top: 108px;
 }
@@ -80,14 +82,15 @@ body{
 .eng-region-card {
     background: white;
     border: 1px solid rgba(44,93,170,0.12);
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    transition: transform 0.4s var(--ease-out), border-color 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
 }
 
 .eng-region-card:hover {
-    border-color: rgba(44,93,170,0.35);
-    box-shadow: 0 4px 24px rgba(44,93,170,0.08);
+    transform: translateY(-4px);
+    border-color: rgba(44,93,170,0.4);
+    box-shadow: 0 18px 40px -18px rgba(44,93,170,0.45);
 }
 
 .eng-region-header {
@@ -96,21 +99,6 @@ body{
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-
-.eng-region-flag {
-    width: 24px;
-    height: auto;
-    flex-shrink: 0;
-}
-
-.eng-region-name {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--offwhite);
 }
 
 .eng-region-sub {
@@ -307,16 +295,16 @@ body{
 .diff-card {
     background: white;
     border: 1px solid rgba(44,93,170,0.12);
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 2rem;
-    transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
+    transition: transform 0.4s var(--ease-out), border-color 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
     -webkit-tap-highlight-color: transparent;
 }
 
 .diff-card:hover {
+    transform: translateY(-4px);
     border-color: rgba(44,93,170,0.4);
-    box-shadow: 0 0 0 2px rgba(44,93,170,0.1);
-    background: rgba(44,93,170,0.04);
+    box-shadow: 0 18px 40px -18px rgba(44,93,170,0.45);
 }
 
 .diff-number {

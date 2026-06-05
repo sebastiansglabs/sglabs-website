@@ -1,3 +1,5 @@
+html { scroll-padding-top: 124px; }
+
 body {
   padding-top: 108px;
 }
@@ -130,17 +132,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-}
-
-.rtag {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.62rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--blue-light);
-  border: 1px solid rgba(44,93,170,0.3);
-  padding: 0.3rem 0.75rem;
-  border-radius: 2px;
 }
 
 /* Divider */

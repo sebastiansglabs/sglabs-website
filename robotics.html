@@ -68,10 +68,10 @@
 
         <!-- Tags -->
         <div class="robotics-tags">
-          <span class="rtag">Robotics Systems</span>
-          <span class="rtag">Automation</span>
-          <span class="rtag">Intelligent Systems</span>
-          <span class="rtag">Engineering Innovation</span>
+          <span class="dtag">Robotics Systems</span>
+          <span class="dtag">Automation</span>
+          <span class="dtag">Intelligent Systems</span>
+          <span class="dtag">Engineering Innovation</span>
         </div>
 
         <!-- Divider -->
@@ -118,7 +118,7 @@
           <a href="signs.html">Signs</a>
           <a href="contact.html">Contact</a>
         </div>
-        <div>© 2025 SG Robotics · sglabsco.com · In Development</div>
+        <div>© 2026 SG Robotics · sglabsco.com · In Development</div>
       </div>
     </footer>
 
@@ -180,6 +180,12 @@
       drawer.querySelectorAll('.mobile-drawer-nav a').forEach(function(link) {
         link.addEventListener('click', closeDrawer);
       });
+
+      // Nav: darken on scroll (match homepage)
+      var navEl = document.querySelector('nav');
+      function onNavScroll() { if (navEl) navEl.classList.toggle('scrolled', window.scrollY > 12); }
+      window.addEventListener('scroll', onNavScroll, { passive: true });
+      onNavScroll();
     </script>
 
   </body>
